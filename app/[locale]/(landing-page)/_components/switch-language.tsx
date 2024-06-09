@@ -21,9 +21,9 @@ const SwitchLanguage = () =>{
   }
     return (
         
-        <div>
+        <div >
             <DropdownMenu >
-            <DropdownMenuTrigger >{locale === 'vi' ? "Tieng viet" : "English"}</DropdownMenuTrigger>
+            <DropdownMenuTrigger>{locale === 'vi' ? "Tiếng Việt" : "English"}</DropdownMenuTrigger>
             <DropdownMenuContent>
                 <DropdownMenuItem onClick={() => {handleLanguageChange("vi")}}>VI</DropdownMenuItem>
                 <DropdownMenuItem onClick={() => {handleLanguageChange("en")}}>EN</DropdownMenuItem>

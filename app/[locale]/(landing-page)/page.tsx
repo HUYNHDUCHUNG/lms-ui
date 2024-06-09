@@ -1,4 +1,5 @@
 import Banner from "./_components/banner"
+import Categories from "./_components/categories"
 import Navbar from "./_components/navbar"
 
 const LandingPage =  () => {
@@ -6,6 +7,7 @@ const LandingPage =  () => {
         <div>
             <Navbar/>
             <Banner/>
+            <Categories/>
         </div>
     )
 } 
