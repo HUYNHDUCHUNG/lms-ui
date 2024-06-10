@@ -1,14 +1,14 @@
 import CategoryItem from './category-item'
 
 import { FaCodeMerge } from "react-icons/fa6";
-import { FaRegLightbulb,FaBrain  } from "react-icons/fa";
+import { FaCode ,FaBrain  } from "react-icons/fa";
 import { TbBrandMiniprogram } from "react-icons/tb";
 
 const Categories = () => {
   const icon = [
     FaCodeMerge,
-    FaBrain ,
-    FaRegLightbulb,
+    FaBrain,
+    FaCode,
     TbBrandMiniprogram 
   ]
   return (

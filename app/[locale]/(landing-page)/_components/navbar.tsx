@@ -33,7 +33,7 @@ export const Navbar = () => {
       <Menu />
       <div className='flex gap-5 justify-center items-center'>
         <SwitchLanguage />
-        <Button className='bg-sky-600 px-6' size="sm">Login</Button>
+        <Button className=' bg-gradient-to-r from-cyan-500 to-blue-500 px-6' size="sm">Login</Button>
       </div>
     </div>
   )
