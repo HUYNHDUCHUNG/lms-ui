@@ -1,6 +1,7 @@
-"use client"
+'use client'
 import { Button } from '@/components/ui/button'
-import { Check, StarHalfIcon, StarIcon } from 'lucide-react'
+import { Check } from 'lucide-react'
+import ReactStars from 'react-rating-star-with-type'
 import Image from 'next/image'
 const Banner = () => {
   return (
@@ -25,9 +26,9 @@ const Banner = () => {
           </li>
         </ul>
         <div className='flex items-center gap-4'>
-          <Button className='bg-sky-500'>Let&apos;s Learn</Button>
-          <div className='flex justify-center items-center gap-2'>
-            
+          <Button className='bg-sky-500 hover:bg-sky-400'>Let&apos;s Learn</Button>
+          <div>
+            <ReactStars value={5} isEdit={false} activeColors={['yellow']} />
           </div>
           <p>(300+ reviews)</p>
         </div>
