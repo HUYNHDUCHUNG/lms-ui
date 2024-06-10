@@ -3,7 +3,7 @@ import { ImCompass } from "react-icons/im";
 const Title = () => {
 
     return (
-        <div className="pt-8 px-32">
+        <div className="mt-16 pt-16 px-32">
             <div className="flex justify-center items-center">
                 <h1 className="text-3xl font-bold">FAT1000 Program - Future AI Talents</h1>
             </div>

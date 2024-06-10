@@ -16,7 +16,9 @@ const Categories = () => {
       <div className='flex justify-center items-center font-bold'>
         <h1 className='text-3xl'>Course Categories</h1>
       </div>
-      <div className='flex items-center justify-between gap-4 pt-4'>
+      <div className='grid grid-cols-3 gap-4 pt-4'>
+        <CategoryItem icon={icon[0]} label='FAT1000 Program' number_course={0}/>
+        <CategoryItem icon={icon[0]} label='FAT1000 Program' number_course={0}/>
         <CategoryItem icon={icon[0]} label='FAT1000 Program' number_course={0}/>
         <CategoryItem icon={icon[0]} label='FAT1000 Program' number_course={0}/>
         <CategoryItem icon={icon[0]} label='FAT1000 Program' number_course={0}/>
