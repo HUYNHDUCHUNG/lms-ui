@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button'
 
 const CourseItem = () => {
   return (
-    <div className='shadow-custom rounded-xl'>
+    <div className='shadow-custom rounded-xl bg-white'>
       <div className='aspect-video'>
         <Image className='size-full object-cover' width={200} height={300} alt='Image' src='/lmsbanner.png' />
       </div>
@@ -23,21 +23,21 @@ const CourseItem = () => {
       <div className='flex flex-col gap-2 pt-2'>
         <div className='flex gap-2'>
           <div className='flex gap-1 items-center font-medium'>
-            <BookText size={20} />3 Lession
+            <BookText size={18} />3 Lession
           </div>
           <div className='flex gap-1 items-center font-medium'>
-            <Languages size={20} />
+            <Languages size={18} />
             Tiếng Việt
           </div>
         </div>
 
         <div className='flex gap-1 items-center font-medium'>
-          <Clock size={20} />4 hours
+          <Clock size={18} />4 hours
         </div>
       </div>
 
       <div className='flex gap-1 items-center font-medium pt-2'>
-        <Calendar size={20} />
+        <Calendar size={18} />
         Start date: 04/05/2024
       </div>
       <div className='flex justify-between pt-2'>

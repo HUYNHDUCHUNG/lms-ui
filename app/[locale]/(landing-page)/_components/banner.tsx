@@ -5,7 +5,7 @@ import ReactStars from 'react-rating-star-with-type'
 import Image from 'next/image'
 const Banner = () => {
   return (
-    <div className='h-[100vh] flex px-32 pt-[150px] bg-sky-100'>
+    <div className='h-[100vh] flex px-32 pt-[150px] bg-gradient-to-r from-cyan-100 to-blue-200'>
       <div className='flex flex-col gap-8'>
         <h1 className='font-bold text-5xl leading-[1.4]'>Learn Today, Be a Champion Tomorow.</h1>
         <p className='text-slate-500'>
