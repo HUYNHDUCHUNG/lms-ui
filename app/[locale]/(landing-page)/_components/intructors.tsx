@@ -15,9 +15,9 @@ const Intructors = () => {
   return (
     <div className='px-32 pt-8'>
       <div className='flex justify-center'>
-        <h1 className='text-3xl font-bold'>Intructors</h1>
+        <h1 className='text-3xl font-bold drop-shadow-custom bg-gradient-to-r from-[#a8c0ff] to-[#3f2b96] bg-clip-text text-transparent'>Intructors</h1>
       </div>
-      <div >
+      <div className="pt-4">
         <Slider {...settings}>
         <IntructorItem />
         <IntructorItem />
