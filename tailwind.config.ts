@@ -6,6 +6,10 @@ module.exports = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
+
+    //Text gradient
+    "./src/**/*.{html,js}",
+    "./node_modules/tw-elements/js/**/*.js"
   ],
   prefix: "",
   theme: {
@@ -17,6 +21,12 @@ module.exports = {
       },
     },
     extend: {
+      background: {
+        'custom-gradient': 'linear-gradient(180deg, #58cc05, #41b4f6)',
+      },
+      dropShadow: {
+        'custom': '12px 12px 7px rgba(167, 162, 164, 0.7)',
+      },
       boxShadow: {
         'custom': '0 0 15px 0 hsla(0, 1%, 47%, .5)',
       },
@@ -76,5 +86,7 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"),
+    require("tw-elements/plugin.cjs")
+  ],
 }
