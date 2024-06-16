@@ -83,6 +83,7 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "custom": "animate-fade-down animate-duration-300 animate-ease-linear"
       },
     },
   },
