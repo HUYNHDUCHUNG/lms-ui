@@ -1,3 +1,4 @@
+import Footer from "../../../_components/footer"
 import Navbar from "../../../_components/navbar"
 import CourseCard from "./components/course-card"
 import Description from "./components/description"
@@ -19,6 +20,7 @@ const CourseId = () => {
                 <CourseCard/>
             </div>
         </div>
+        <Footer/>
     </div>
   )
 }
