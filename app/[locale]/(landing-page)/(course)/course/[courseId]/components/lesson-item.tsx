@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils"
 import { ChevronRight } from "lucide-react"
 import { useState } from "react"
 import Missions from "./missions"
+import Rewards from "./rewards"
 
 interface LessionItemProps {
     isLast?: boolean
@@ -22,7 +23,9 @@ const LessionItem = ({
             )}
                 onClick={() => setIsOpen(!isOpen)}
             >
-                <ChevronRight className={cn(
+                <ChevronRight className={
+                    cn(
+                        "text-slate-500",
                     isOpen && "rotate-90 transition duration-300"
                 )}/>
                 <span>
@@ -58,6 +61,7 @@ const LessionItem = ({
                 </div>
                 <div className="mt-2 flex flex-col">
                     <span className="font-semibold">Rewards</span>
+                    <Rewards/>
                 </div>
             
             
