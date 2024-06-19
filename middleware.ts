@@ -5,7 +5,8 @@ export default createMiddleware({
   locales: ['en', 'vi'],
  
   // Used when no locale matches
-  defaultLocale: 'en'
+  defaultLocale: 'en',
+  localePrefix:'always'
 });
  
 export const config = {
