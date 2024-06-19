@@ -5,11 +5,12 @@ const Logo = () =>{
     return (
         <Link href="/">
             <Image
+                
                 height={50}
                 width={120}
                 alt="logo"
                 src={"/logo.svg"}
-                className="h-[65px]"
+                className="h-[65px] w-auto"
             />
         </Link>
     )
