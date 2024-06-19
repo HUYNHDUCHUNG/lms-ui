@@ -1,7 +1,26 @@
-{
-    "Index": {
-      "title": "Hello world!",
-      "home": "Home"
 
-    }
+{
+  "LandingPage": {
+    "menu": {
+      "home": "Home",
+      "about": "About",
+      "courses": "Courses",
+      "instructor": "Instructor"
+    },
+    "mainHeading": "Learn Today, Be a Champion Tomorow.",
+    "description" : "There are many variations of passages of Lorem ipsum available, but the majotiry have suffered alteration in some form.",
+    "features": {
+      "exclusive_courses": "100+ Exclusive Online Courses",
+      "best_instructors": "Best Instructors for Live Courses",
+      "get_certificate": "Get a Certificate"
+    },
+    "reviews": "reviews",
+    "letLearn": "Let's Learn",
+    "courseCategory": "Course Categories",
+    "intructor": "Intructor"
+
+
+  
+
   }
+}
