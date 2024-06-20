@@ -10,7 +10,7 @@ const Logo = () =>{
                 width={120}
                 alt="logo"
                 src={"/logo.svg"}
-                className="h-[65px] w-auto"
+                className="h-[65px] w-auto py-4"
             />
         </Link>
     )

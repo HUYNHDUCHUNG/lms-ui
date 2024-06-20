@@ -17,7 +17,20 @@
     "reviews": "reviews",
     "letLearn": "Let's Learn",
     "courseCategory": "Course Categories",
-    "intructor": "Intructor"
+    "intructor": "Intructor",
+    "footer":{
+      "title": "AvocaEdu is an affordable online learning platform that helps everyone reskill and upskill in AI.",
+      "aboutUs": "About us",
+      "contactUs": "Contact us",
+      "course": "Course",
+      "aiAppstore": "AI Appstore",
+      "fat1000": "FAT1000",
+      "tests": "Tests",
+      "projectOpening": "Project Opening",
+      "hiring": "Hiring",
+      "becomeInstructor": "Become Instructor"
+    }
+    
 
 
   
