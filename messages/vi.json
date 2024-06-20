@@ -16,6 +16,19 @@
     "reviews": "đánh giá",
     "letLearn": "Hãy Học",
     "courseCategory": "Danh mục khóa học",
-    "instructor": "Giảng viên"
+    "instructor": "Giảng viên",
+    "footer": {
+      "title": "AvocaEdu là một nền tảng học tập trực tuyến giá cả phải chăng giúp mọi người tái kỹ năng và nâng cao kỹ năng trong lĩnh vực Trí tuệ nhân tạo.",
+      "aboutUs": "Về chúng tôi",
+      "contactUs": "Liên hệ",
+      "course": "Khóa học",
+      "aiAppstore": "Ứng dụng AI",
+      "fat1000": "FAT1000",
+      "tests": "Bài kiểm tra",
+      "projectOpening": "Mở dự án",
+      "hiring": "Tuyển dụng",
+      "becomeInstructor": "Trở thành Giảng viên"
+    }
+    
   }
 }

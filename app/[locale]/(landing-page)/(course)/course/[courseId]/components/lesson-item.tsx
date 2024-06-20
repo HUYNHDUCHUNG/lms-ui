@@ -35,7 +35,7 @@ const LessionItem = ({
             <div className={cn(
                 "h-0 overflow-hidden transition duration-300",
                 isOpen && "h-auto p-4",
-                isLast || "border-b border-slate-500"
+                isLast || "border-1 border-slate-500"
             )}>
                 <iframe width="700" height="400" src="https://www.youtube.com/embed/8zRy02Wl1JA?list=RDkEZa5Bn3IaM" title="THƯƠNG EM ĐẾN GIÀ | LÊ BẢO BÌNH | OFFICIAL MUSIC VIDEO"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
 

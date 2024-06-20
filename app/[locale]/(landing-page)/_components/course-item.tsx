@@ -23,10 +23,10 @@ const CourseItem = ({
       <div className='aspect-video'>
         <Image className='size-full object-cover' width={200} height={300} alt='Image' src={src} loader={() => src} />
       </div>
-      <div className='p-2 font-bold '>
+      <div className='mt-2 px-2 font-bold line-clamp-1'>
         <h1>{course.title}</h1>
       </div>
-      <div className='p-2'>
+      <div className='p-2 mt-2'>
       <div className='flex gap-2'>
         {course.hashtag.map((hashtag,index)=>(
            <div key={index} className='px-2 font-normal rounded-lg border-sky-600 border-2'>{hashtag}</div>
