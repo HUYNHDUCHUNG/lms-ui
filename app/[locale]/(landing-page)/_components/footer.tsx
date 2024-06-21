@@ -5,7 +5,7 @@ import Link from 'next/link'
 const Footer = () => {
   const t = useTranslations('LandingPage')
   return (
-    <div className='mt-16 px-32 py-16 grid grid-cols-4 gap-3 bg-gradient-to-r from-cyan-100 to-blue-200'>
+    <div className='mt-16 px-32 py-16 grid grid-cols-4 gap-3 bg-gradient-to-r from-cyan-100 to-blue-200 text-primary-foreground'>
       <div className='mr-2'>
         <div>
           <Image height={80} width={80} alt='Logo' src='/logo.svg' />

@@ -19,7 +19,7 @@ const CourseItem = ({
   const locate = useLocale()
   const src = course.image
   return (
-    <div className='shadow-custom rounded-xl bg-white overflow-hidden'>
+    <div className='shadow-custom rounded-xl bg-background overflow-hidden'>
       <div className='aspect-video'>
         <Image className='size-full object-cover' width={200} height={300} alt='Image' src={src} loader={() => src} />
       </div>
@@ -67,7 +67,7 @@ const CourseItem = ({
           <span className='font-bold text-xl'>{formatVND(course.price)}</span>
         </div>
         <div>
-          <Link href={`/${locate}/course/${course.id}`}><Button className='bg-green-700 hover:bg-green-600'>Join Now</Button></Link>
+          <Link href={`/${locate}/course/${course.id}`}><Button className='bg-green-700 hover:bg-green-600  text-white'>Join Now</Button></Link>
           
         </div>
       </div>
