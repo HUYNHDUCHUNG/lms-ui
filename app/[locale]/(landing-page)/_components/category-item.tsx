@@ -14,7 +14,7 @@ const CategoryItem = ({
 }:CategoryItemProps
 ) =>{
     return (
-        <div className="flex items-center gap-4 bg-sky-100 p-8 rounded-sm cursor-pointer hover:bg-[#615EFC] group">
+        <div className="flex items-center gap-4 bg-primary text-primary-foreground p-8 rounded-sm cursor-pointer hover:bg-[#615EFC] group">
             <Icon />
             <div>
                 <h1 className="font-semibold group-hover:text-[#FAA300]">{label}</h1>

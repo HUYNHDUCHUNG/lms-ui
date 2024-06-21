@@ -21,6 +21,7 @@ module.exports = {
       },
     },
     extend: {
+     
       background: {
         'custom-gradient': 'linear-gradient(180deg, #58cc05, #41b4f6)',
       },
