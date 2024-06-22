@@ -12,7 +12,7 @@ const Description = ({
   return (
     <div>
       <h1 className='font-bold text-2xl'>{title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: description }}>
+      <div className='mt-2' dangerouslySetInnerHTML={{ __html: description }}>
         
       </div>
       

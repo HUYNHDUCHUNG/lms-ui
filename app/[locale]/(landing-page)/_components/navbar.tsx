@@ -27,7 +27,7 @@ export const Navbar = () => {
   }, []);
   return (
     <div className={cn(
-      'w-full px-32 flex justify-between fixed z-10 transition text-primary-foreground',
+      'w-full px-32 flex justify-between fixed z-10 transition text-foreground',
       background 
     )}>
       <Logo />
@@ -35,7 +35,7 @@ export const Navbar = () => {
       <div className='flex gap-5 justify-center items-center'>
         <SwitchLanguage />
         <ThemeToggle/>
-        <Button className=' bg-gradient-to-r from-cyan-500 to-blue-500 px-6' size="sm">Login</Button>
+        <Button className=' bg-gradient-to-r from-cyan-500 to-blue-500 px-6 text-white' size="sm">Login</Button>
       </div>
     </div>
   )

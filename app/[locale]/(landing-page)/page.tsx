@@ -3,12 +3,12 @@ import { useEffect, useState } from 'react'
 import Banner from './_components/banner'
 import Categories from './_components/categories'
 import Footer from './_components/footer'
-import Intructors from './_components/intructors'
 import ListCourses from './_components/list-courses'
 import Navbar from './_components/navbar'
 import { Category } from '@/@types'
 import axiosInstance from '@/config/axiosConfig'
 import { AxiosResponse } from 'axios'
+import Instructors from './_components/instructors'
 
 type CategoryData = {
   results: Category[];
@@ -37,7 +37,7 @@ const LandingPage = () => {
          <ListCourses key={index} category={category}/>
       ))}
      
-      <Intructors />
+      <Instructors />
       <Footer />
     </div>
   )
