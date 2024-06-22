@@ -32,17 +32,17 @@ const CourseCard = ({
         <span className='font-bold text-3xl'>{formatVND(course.price)}</span>
       </div>
       <div className='px-4 pt-2'>
-        <Button className='bg-green-700 hover:bg-green-600 w-full text-transform: capitalize;'>
+        <Button className='bg-green-700 hover:bg-green-600 w-full text-transform: capitalize; text-white'>
           Buy for me
         </Button>
       </div>
       <div className='px-4 pt-2'>
-        <Button className='bg-amber-400 hover:bg-amber-300 w-full text-transform: capitalize;'>
+        <Button className='bg-amber-400 hover:bg-amber-300 w-full text-transform: capitalize; text-white'>
           Buy for team
         </Button>
       </div>
       <div className='px-4 pt-2'>
-        <Button className='bg-sky-500 hover:bg-sky-400 w-full text-transform: capitalize;'>
+        <Button className='bg-sky-500 hover:bg-sky-400 w-full text-transform: capitalize; text-white'>
           Apply for scholarship (upto 50%)
         </Button>
       </div>

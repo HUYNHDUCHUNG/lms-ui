@@ -7,6 +7,7 @@ import { useState } from "react"
 import Missions from "./missions"
 import Rewards from "./rewards"
 import { Lesson } from "@/@types"
+import { useTheme } from "next-themes"
 
 interface LessionItemProps {
     isLast?: boolean
@@ -25,8 +26,9 @@ const LessionItem = ({
     const [isOpen,setIsOpen] = useState(false);
     return (
         <div>
-            <div className={cn("flex items-center p-2 bg-gray-100",
-                isLast || "border-b border-slate-500"
+            <div className={cn("flex items-center p-2",
+                isLast || "border-b border-slate-500",
+                
             )}
                 onClick={() => {
                    
@@ -38,12 +40,12 @@ const LessionItem = ({
                     setIsOpen(!isOpen)
                 }}
             >
-                <ChevronRight className={
+                <ChevronRight size={20} className={
                     cn(
                         "text-slate-500",
                         current === lesson.id && "rotate-90 transition duration-300"
                 )}/>
-                <span>
+                <span className="font-light text-base">
                    {lesson.title} - Misson {lesson.num_mission}
                 </span>
             </div>
