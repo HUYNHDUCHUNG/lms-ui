@@ -6,10 +6,10 @@ import ReactStars from 'react-rating-star-with-type'
 import { formatVND } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
-import { Course } from '@/@types'
+import { CourseDetail } from '@/@types'
 
 interface CourseCardProps{
-  course: Course
+  course: CourseDetail
 }
 const CourseCard = ({
   course

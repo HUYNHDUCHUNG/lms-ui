@@ -4,37 +4,25 @@ import Footer from "../../../_components/footer"
 import Navbar from "../../../_components/navbar"
 import CourseCard from "./components/course-card"
 import Description from "./components/description"
-import IntructorDetail from "./components/intructor-detail"
 import LessonsList from "./components/lessons-list"
-import { Category, Course } from "@/@types"
+import {  CourseDetail, Instructor } from "@/@types"
 import axiosInstance from "@/config/axiosConfig"
 import { AxiosResponse } from "axios"
+import InstructorDetail from "./components/instructor-detail"
 
-type CategoryData = {
-  results: Category[];
-}
+
 const CourseId = ({
   params
 }:{
   params: {courseId: string}
 }) => {
-  const [course,setCourse] = useState<Course>()
+  const [course,setCourse] = useState<CourseDetail>()
   useEffect(() => {
     const getCourse = async () => {
       try {
-        const response = await axiosInstance.get<any,AxiosResponse<CategoryData>>("/education/courses-categories/?format=json");
-        const categories = response.data.results;
-        if (categories) {
-          categories.forEach(category => {
-            const course = category.course.find(course => course.id  === +params.courseId);
-            if (course) {
-              console.log("Thông tin của khóa học:", course);
-              setCourse(course)
-            }
-          });
-        }
-      
-        
+        const response = await axiosInstance.get<any,AxiosResponse<CourseDetail>>(`/education/courses/${params.courseId}/?format=json`);
+        setCourse(response.data)
+        console.log(response.data.instructor)
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -49,8 +37,8 @@ const CourseId = ({
         <div className="flex gap-4 px-32 pt-[100px]">
             <div>
               <Description title={course?.title!} description={course?.description!}/>
-              <LessonsList/>
-              <IntructorDetail/>
+              <LessonsList lessons={course?.lessons}/>
+              <InstructorDetail instructors={course?.instructor}/>
             </div>
             <div>
                 <CourseCard course={course}/>

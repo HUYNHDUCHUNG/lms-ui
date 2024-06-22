@@ -1,15 +1,15 @@
 "use client"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import IntructorItem from './intructor-item'
 import Slider from "react-slick";
+import InstructorItem from "./instructor-item";
 
-const Intructors = () => {
+const Instructors = () => {
      var settings = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1
   };
   return (
@@ -17,12 +17,12 @@ const Intructors = () => {
       <div className='flex justify-center'>
         <h1 className='text-3xl font-bold drop-shadow-custom bg-gradient-to-r from-[#a8c0ff] to-[#3f2b96] bg-clip-text text-transparent'>Intructors</h1>
       </div>
-      <div className="pt-4">
+      <div className="pt-4 mt-2">
         <Slider {...settings}>
-        <IntructorItem />
-        <IntructorItem />
-        <IntructorItem />
-        <IntructorItem />
+        <InstructorItem />
+        <InstructorItem />
+        <InstructorItem />
+        <InstructorItem />
 
         </Slider>
       </div>
@@ -30,4 +30,4 @@ const Intructors = () => {
   )
 }
 
-export default Intructors
+export default Instructors

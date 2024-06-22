@@ -1,11 +1,17 @@
+import { cn } from '@/lib/utils'
 import { useTranslations } from 'next-intl'
+import { useTheme } from 'next-themes'
 import Image from 'next/image'
 import Link from 'next/link'
 
 const Footer = () => {
+  const {theme} = useTheme()
   const t = useTranslations('LandingPage')
   return (
-    <div className='mt-16 px-32 py-16 grid grid-cols-4 gap-3 bg-gradient-to-r from-cyan-100 to-blue-200 text-primary-foreground'>
+    <div className={cn(
+      'mt-16 px-32 py-16 grid grid-cols-4 gap-3 text-foreground',
+        theme === 'dark' ? 'bg-gradient-to-r from-[#615EFC] to-[#4623e0]' : 'bg-gradient-to-r from-cyan-100 to-blue-200 '
+    )}>
       <div className='mr-2'>
         <div>
           <Image height={80} width={80} alt='Logo' src='/logo.svg' />

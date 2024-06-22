@@ -12,6 +12,7 @@ import {
 import { usePathname, useRouter } from '@/navigation'
 import { ChevronDown } from 'lucide-react'
 import { useLocale } from 'next-intl'
+import { useTheme } from 'next-themes'
 import Image from 'next/image'
 
 const LANGUAGES = {
@@ -35,8 +36,8 @@ const SwitchLanguage = () => {
   const handleLanguageChange = (code: string) => {
     router.push(pathname, { locale: code })
   }
-
   return (
+    
     <div>
       <DropdownMenu>
         <DropdownMenuTrigger asChild className='flex items-center gap-1 focus-visible:ring-0 focus-visible:ring-offset-0'>
