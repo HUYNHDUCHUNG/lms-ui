@@ -34,7 +34,7 @@ const CourseId = ({
   return (
     <div>
         <Navbar/>
-        <div className="flex gap-4 px-32 pt-[100px]">
+        <div className="flex gap-4 px-32 py-16 pt-[100px]">
             <div>
               <Description title={course?.title!} description={course?.description!}/>
               <LessonsList lessons={course?.lessons}/>

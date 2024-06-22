@@ -18,9 +18,15 @@ const LessonsList = ({
             </div>
             <div className="border border-slate-500 rounded-md overflow-hidden mt-2">
                 {
-                    lessons.map((lesson,index) => (
-                        <LessionItem current={current} setCurrent={setCurrent} key={index} lesson={lesson}/>
-                    ))
+                    lessons.map((lesson,index) => {
+                        const isLast = index === lessons.length - 1;
+                        return (
+                            (
+                                <LessionItem isLast={isLast} current={current} setCurrent={setCurrent} key={index} lesson={lesson}/>
+                            )
+                        )
+                    }
+                       )
                 }
 {/*                 
                 <LessionItem/>
