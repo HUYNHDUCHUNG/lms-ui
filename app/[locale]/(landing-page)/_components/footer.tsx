@@ -9,7 +9,7 @@ const Footer = () => {
   const t = useTranslations('LandingPage')
   return (
     <div className={cn(
-      'mt-16 px-32 py-16 grid grid-cols-4 gap-3 text-foreground',
+      'px-32 py-16 grid grid-cols-4 gap-3 text-foreground',
         theme === 'dark' ? 'bg-gradient-to-r from-[#615EFC] to-[#4623e0]' : 'bg-gradient-to-r from-cyan-100 to-blue-200 '
     )}>
       <div className='mr-2'>

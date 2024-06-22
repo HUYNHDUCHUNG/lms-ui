@@ -25,7 +25,7 @@ const LessionItem = ({
     const [isOpen,setIsOpen] = useState(false);
     return (
         <div>
-            <div className={cn("flex items-center p-2",
+            <div className={cn("flex items-center p-2 bg-gray-100",
                 isLast || "border-b border-slate-500"
             )}
                 onClick={() => {

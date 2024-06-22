@@ -9,6 +9,8 @@ import { Category } from '@/@types'
 import axiosInstance from '@/config/axiosConfig'
 import { AxiosResponse } from 'axios'
 import Instructors from './_components/instructors'
+import BannerMiddle from './_components/banner-middle'
+import BannerBottom from './_components/banner-bottom'
 
 type CategoryData = {
   results: Category[];
@@ -36,8 +38,9 @@ const LandingPage = () => {
           category.course.length != 0 && 
          <ListCourses key={index} category={category}/>
       ))}
-     
+      <BannerMiddle/>
       <Instructors />
+      <BannerBottom/>
       <Footer />
     </div>
   )
