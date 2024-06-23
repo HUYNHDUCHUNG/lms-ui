@@ -13,7 +13,7 @@ const Banner = () => {
   return (
     <div className={cn(
       'h-[100vh] flex px-32 pt-[150px] text-foreground',
-      theme === 'dark' ? 'bg-gradient-to-r from-[#615EFC] to-[#4623e0]' : 'bg-gradient-to-r from-cyan-100 to-blue-200 '
+      theme === 'dark' ? 'bg-zinc-800' : 'bg-gradient-to-r from-cyan-100 to-blue-200 '
     )}>
       <div className='flex flex-col gap-8'>
         <h1 className='font-bold text-5xl leading-[1.4]'>{t("mainHeading")}</h1>
