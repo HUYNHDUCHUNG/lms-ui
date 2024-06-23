@@ -13,6 +13,7 @@ module.exports = {
   ],
   prefix: "",
   theme: {
+    
     container: {
       center: true,
       padding: "2rem",
@@ -33,6 +34,7 @@ module.exports = {
         'custom-missons' : '0 3px 0 0 #bcd2c4'
       },
       colors: {
+        
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

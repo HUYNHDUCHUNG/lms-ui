@@ -5,14 +5,11 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
   DropdownMenuTrigger,
-  DropdownMenuSeparator
 } from '@/components/ui/dropdown-menu'
 import { usePathname, useRouter } from '@/navigation'
 import { ChevronDown } from 'lucide-react'
 import { useLocale } from 'next-intl'
-import { useTheme } from 'next-themes'
 import Image from 'next/image'
 
 const LANGUAGES = {
@@ -41,7 +38,7 @@ const SwitchLanguage = () => {
     <div>
       <DropdownMenu>
         <DropdownMenuTrigger asChild className='flex items-center gap-1 focus-visible:ring-0 focus-visible:ring-offset-0'>
-          <Button size="sm" variant="outline" className='bg-transparent border-slate-700 hover:bg-transparent'>
+          <Button size="sm" variant="outline" className='bg-transparent border-slate-700 hover:bg-transparent dark:hover:text-slate-500'>
             {
               <Image
                 width={24}
