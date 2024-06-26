@@ -6,6 +6,7 @@ import SwitchLanguage from './switch-language'
 import { useEffect, useState } from 'react'
 import { cn } from '@/lib/utils'
 import { ThemeToggle } from '../../../../components/theme-toggle'
+import { useTheme } from 'next-themes'
 
 export const Navbar = () => {
   const [background, setBackground] = useState('bg-transparent');
@@ -25,9 +26,11 @@ export const Navbar = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+  const {theme} = useTheme()
   return (
     <div className={cn(
-      'w-full px-32 flex justify-between fixed z-20 transition text-foreground bg-white shadow-lg '
+      'w-full px-32 flex justify-between fixed z-20 transition text-foreground bg-white shadow-lg',
+      theme === 'dark' && 'bg-black text-white'
     )}>
       <Logo />
       <Menu />

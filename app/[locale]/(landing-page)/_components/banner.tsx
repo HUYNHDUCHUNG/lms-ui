@@ -75,10 +75,10 @@ const Banner = () => {
         </SwiperSlide>
       </Swiper>
 
-      <div className='flex flex-col gap-4 absolute left-32 top-[40%] z-10 w-[250px]'>
-        <h1 className='text-3xl font-bold'>Hãy đến giảng <br></br>dạy với chúng tôi</h1>
-        <span>Trở thành giảng viên và thay đổi cuộc sống của mọi người, bao gồm cả cuộc sống của chính bạn</span>
-        <Button className='w-min px-14 bg-black text-white hover:bg-slate-950'>Bắt đầu</Button>
+      <div className='flex flex-col gap-4 absolute left-32 top-[40%] z-10 w-[250px] text-foreground'>
+        <h1 className='text-3xl font-bold'>{t("homeBanner.title")}</h1>
+        <span>{t("homeBanner.description")}</span>
+        <Button className='w-min px-14 bg-black text-white hover:bg-slate-950'>{t("homeBanner.start")}</Button>
       </div>
     </div>
   )

@@ -6,15 +6,12 @@
       "courses": "Khóa học",
       "instructor": "Giảng viên"
     },
-    "mainHeading": "Học hành hôm nay, Trở thành nhà vô địch ngày mai.",
-    "description" : "Có nhiều biến thể của đoạn Lorem ipsum có sẵn, nhưng hầu hết đã trải qua sự thay đổi ở một số hình thức.",
-    "features": {
-      "exclusive_courses": "100+ Khóa học trực tuyến độc quyền",
-      "best_instructors": "Các giảng viên hàng đầu dạy trực tiếp",
-      "get_certificate": "Nhận chứng chỉ"
+    "homeBanner":{
+      "title": "Hãy đến giảng dạy với chúng tôi",
+      "description": "Trở thành giảng viên và thay đổi cuộc sống của mọi người, bao gồm cả cuộc sống của chính bạn",
+      "start": "Bắt đầu"
     },
     "reviews": "đánh giá",
-    "letLearn": "Hãy Học",
     "courseCategory": "Danh mục khóa học",
     "instructor": "Giảng viên",
     "footer": {

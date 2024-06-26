@@ -7,15 +7,12 @@
       "courses": "Courses",
       "instructor": "Instructor"
     },
-    "mainHeading": "Learn Today, Be a Champion Tomorow.",
-    "description" : "There are many variations of passages of Lorem ipsum available, but the majotiry have suffered alteration in some form.",
-    "features": {
-      "exclusive_courses": "100+ Exclusive Online Courses",
-      "best_instructors": "Best Instructors for Live Courses",
-      "get_certificate": "Get a Certificate"
+    "homeBanner": {
+      "title": "Come Teach With Us",
+      "description": "Become an instructor and change the lives of others, including your own",
+      "start": "Start"
     },
     "reviews": "reviews",
-    "letLearn": "Let's Learn",
     "courseCategory": "Course Categories",
     "intructor": "Intructor",
     "footer":{
