@@ -11,6 +11,7 @@ const Instructors = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1
+
   };
   return (
     <div className='px-32 pt-8 mt-16'>

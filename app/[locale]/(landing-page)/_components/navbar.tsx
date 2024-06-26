@@ -15,7 +15,7 @@ export const Navbar = () => {
       if (window.scrollY > 50) {
         setBackground('bg-white shadow-sm text-black');
       } else {
-        setBackground('bg-transparent');
+        setBackground('bg-white');
       }
     };
 
@@ -27,8 +27,7 @@ export const Navbar = () => {
   }, []);
   return (
     <div className={cn(
-      'w-full px-32 flex justify-between fixed z-10 transition text-foreground',
-      background 
+      'w-full px-32 flex justify-between fixed z-20 transition text-foreground bg-white shadow-lg '
     )}>
       <Logo />
       <Menu />
