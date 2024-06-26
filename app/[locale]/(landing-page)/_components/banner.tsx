@@ -1,4 +1,14 @@
 'use client'
+import { Swiper, SwiperSlide } from 'swiper/react'
+
+// Import Swiper styles
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/effect-fade'
+import 'swiper/css/navigation'
+// import required modules
+import { EffectFade, Navigation, Pagination, Autoplay } from 'swiper/modules'
+
 import { Button } from '@/components/ui/button'
 import { Check } from 'lucide-react'
 import ReactStars from 'react-rating-star-with-type'
@@ -8,45 +18,67 @@ import { useTheme } from 'next-themes'
 import { cn } from '@/lib/utils'
 
 const Banner = () => {
-  const {theme} = useTheme();
+  const { theme } = useTheme()
   const t = useTranslations('LandingPage')
+
   return (
-    <div className={cn(
-      'h-[100vh] flex px-32 pt-[150px] text-foreground',
-      theme === 'dark' ? 'bg-zinc-800' : 'bg-gradient-to-r from-cyan-100 to-blue-200 '
-    )}>
-      <div className='flex flex-col gap-8'>
-        <h1 className='font-bold text-5xl leading-[1.4]'>{t("mainHeading")}</h1>
-        <p className={cn('text-slate-500',
-          theme === 'dark' && 'text-white'
-        )
-          
-        }>
-        {t("description")}
-        </p>
-        <ul>
-          <li className='flex gap-2'>
-            <Check /> {t("features.exclusive_courses")}
-          </li>
-          <li className='flex gap-2'>
-            <Check />
-            {t("features.best_instructors")}
-          </li>
-          <li className='flex gap-2'>
-            <Check />
-            {t("features.get_certificate")}
-          </li>
-        </ul>
-        <div className='flex items-center gap-4'>
-          <Button className='bg-sky-500 hover:bg-sky-400 text-white'> {t("letLearn")}</Button>
-          <div>
-            <ReactStars value={5} isEdit={false} activeColors={['yellow']} />
+    <div className='relative'>
+      <Swiper  
+      spaceBetween={30}
+       effect={'fade'} 
+      //  navigation={true}
+      autoplay={{
+        delay: 3000,
+        disableOnInteraction: false,
+      }}
+       pagination={{
+        clickable: true,
+      }}
+       modules={[EffectFade,Pagination, Navigation, Autoplay]} className='mySwiper'>
+        <SwiperSlide>
+          {' '}
+          <div className='h-[calc(100vh-65px)] mt-[65px] '>
+            <Image
+              className='h-[100%] w-full object-cover'
+              height={1000}
+              width={1000}
+              alt='banner'
+              src={'/data/banner/banner-1.jpg'}
+            />
           </div>
-          <p>(300+  {t("reviews")})</p>
-        </div>
-      </div>
-      <div>
-        <Image height={700} width={700} alt='banner' src='/lmsbanner.png' />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          {' '}
+          <div className='h-[calc(100vh-65px)] mt-[65px] '>
+            <Image
+              className='h-[100%] w-full object-cover'
+              height={1000}
+              width={1000}
+              alt='banner'
+              src={'/data/banner/banner-2.jpg'}
+            />
+          </div>
+        </SwiperSlide>
+       
+        <SwiperSlide>
+          {' '}
+          <div className='h-[calc(100vh-65px)] mt-[65px] '>
+            <Image
+              className='h-[100%] w-full object-cover'
+              height={1000}
+              width={1000}
+              alt='banner'
+              src={'/data/banner/banner-5.jpg'}
+            />
+          </div>
+        </SwiperSlide>
+      </Swiper>
+
+      <div className='flex flex-col gap-4 absolute left-32 top-[40%] z-10 w-[250px]'>
+        <h1 className='text-3xl font-bold'>Hãy đến giảng <br></br>dạy với chúng tôi</h1>
+        <span>Trở thành giảng viên và thay đổi cuộc sống của mọi người, bao gồm cả cuộc sống của chính bạn</span>
+        <Button className='w-min px-14 bg-black text-white hover:bg-slate-950'>Bắt đầu</Button>
       </div>
     </div>
   )
