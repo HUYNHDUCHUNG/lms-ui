@@ -11,27 +11,26 @@ import { useTheme } from 'next-themes'
 export const Navbar = () => {
   const [background, setBackground] = useState('bg-transparent');
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setBackground('bg-white shadow-sm text-black');
-      } else {
-        setBackground('bg-white');
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 50) {
+  //       setBackground('bg-white shadow-sm text-black');
+  //     } else {
+  //       setBackground('bg-white');
+  //     }
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
+  //   window.addEventListener('scroll', handleScroll);
     
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
   const {theme} = useTheme()
   return (
     <div className={cn(
-      'w-full px-32 flex justify-between fixed z-20 transition bg-white shadow-lg',
-      theme === 'dark' && 'bg-black text-white',
-      background
+      'w-full px-32 flex justify-between fixed z-20 transition text-foreground bg-white shadow-lg dark:bg-black',
+      // theme === 'dark' && 'bg-black text-white shadow-lg',
     )}>
       <Logo />
       <Menu />
