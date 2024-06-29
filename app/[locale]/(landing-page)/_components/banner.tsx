@@ -36,7 +36,6 @@ const Banner = () => {
       }}
        modules={[EffectFade,Pagination, Navigation, Autoplay]} className='mySwiper'>
         <SwiperSlide>
-          {' '}
           <div className='h-[calc(100vh-65px)] mt-[65px] '>
             <Image
               className='h-[100%] w-full object-cover'
@@ -49,7 +48,6 @@ const Banner = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-          {' '}
           <div className='h-[calc(100vh-65px)] mt-[65px] '>
             <Image
               className='h-[100%] w-full object-cover'
@@ -62,7 +60,6 @@ const Banner = () => {
         </SwiperSlide>
        
         <SwiperSlide>
-          {' '}
           <div className='h-[calc(100vh-65px)] mt-[65px] '>
             <Image
               className='h-[100%] w-full object-cover'
