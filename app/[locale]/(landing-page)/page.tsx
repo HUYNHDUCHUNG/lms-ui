@@ -23,7 +23,7 @@ const LandingPage = () => {
         const response = await axiosInstance.get<any,AxiosResponse<CategoryData>>("/education/courses-categories/?format=json")
         setCategories(response.data.results)
       } catch (error) {
-        
+        console.error("Error fetching data:", error);
       }
     }
 

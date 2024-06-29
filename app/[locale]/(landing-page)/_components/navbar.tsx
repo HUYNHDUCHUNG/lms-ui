@@ -29,8 +29,9 @@ export const Navbar = () => {
   const {theme} = useTheme()
   return (
     <div className={cn(
-      'w-full px-32 flex justify-between fixed z-20 transition text-foreground bg-white shadow-lg',
-      theme === 'dark' && 'bg-black text-white'
+      'w-full px-32 flex justify-between fixed z-20 transition bg-white shadow-lg',
+      theme === 'dark' && 'bg-black text-white',
+      background
     )}>
       <Logo />
       <Menu />
