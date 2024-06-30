@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react'
 import { cn } from '@/lib/utils'
 import { ThemeToggle } from '../../../../components/theme-toggle'
 import { useTheme } from 'next-themes'
+import MobileMenu from '@/components/mobile-menu'
 
 export const Navbar = () => {
   const [background, setBackground] = useState('bg-transparent');
@@ -29,16 +30,21 @@ export const Navbar = () => {
   const {theme} = useTheme()
   return (
     <div className={cn(
-      'w-full px-32 flex justify-between fixed z-20 transition text-foreground bg-white shadow-lg dark:bg-black',
+      ' px-4 sm:px-32  w-full flex justify-between fixed z-20 transition text-foreground bg-white shadow-lg dark:bg-black',
       // theme === 'dark' && 'bg-black text-white shadow-lg',
     )}>
       <Logo />
       <Menu />
       <div className='flex gap-5 justify-center items-center'>
-        <SwitchLanguage />
-        <ThemeToggle/>
+        <div className='hidden sm:flex gap-5 justify-center items-center'>
+          <SwitchLanguage />
+          <ThemeToggle/>
+        </div>
+      
         <Button className=' bg-gradient-to-r from-cyan-500 to-blue-500 px-6 text-white' size="sm">Login</Button>
+        <MobileMenu/>
       </div>
+      
     </div>
   )
 }

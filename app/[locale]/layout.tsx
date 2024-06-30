@@ -10,6 +10,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Moodle',
   description: 'Lms app',
+
 }
 
 export default async function RootLayout({
@@ -22,6 +23,7 @@ export default async function RootLayout({
   const messages = await getMessages()
   return (
     <html lang={locale}>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider
