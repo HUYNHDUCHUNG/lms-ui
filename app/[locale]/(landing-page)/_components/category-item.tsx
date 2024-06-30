@@ -17,7 +17,7 @@ const CategoryItem = ({
 ) =>{
     const {theme} = useTheme()
     return (
-        <div className="flex items-center gap-4 bg-primary text-primary-foreground p-8 rounded-sm cursor-pointer hover:bg-[#615EFC] group">
+        <div className="flex items-center gap-4 bg-primary text-primary-foreground px-8 lg:px-4 py-8 lg:py-6 rounded-sm cursor-pointer hover:bg-[#615EFC] group">
             <Icon  className={cn(
                         theme === 'dark' && 'text-white'
                     )}/>
