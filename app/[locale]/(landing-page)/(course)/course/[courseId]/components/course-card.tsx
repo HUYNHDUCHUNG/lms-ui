@@ -16,7 +16,7 @@ const CourseCard = ({
 }:CourseCardProps) => {
   const src = course.image
   return (
-    <div className='shadow-custom rounded-xl bg-background w-[400px] overflow-hidden'>
+    <div className='shadow-custom rounded-xl bg-background overflow-hidden'>
       <div className='aspect-video '>
         <Image
           className='size-full object-cover'

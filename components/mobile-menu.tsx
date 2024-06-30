@@ -1,9 +1,6 @@
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
   SheetTrigger
 } from '@/components/ui/sheet'
 import { Button } from './ui/button'
@@ -17,7 +14,7 @@ const MobileMenu = () => {
     const t = useTranslations('LandingPage')
   return (
     <Sheet>
-      <SheetTrigger asChild className='sm:hidden'>
+      <SheetTrigger asChild className='md:hidden'>
         <Button variant="ghost" size={'icon'}><Menu /></Button>
       </SheetTrigger>
       <SheetContent side="left" className='flex flex-col justify-between'>

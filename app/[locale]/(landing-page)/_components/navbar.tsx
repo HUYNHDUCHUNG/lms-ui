@@ -30,13 +30,13 @@ export const Navbar = () => {
   const {theme} = useTheme()
   return (
     <div className={cn(
-      ' px-4 sm:px-32  w-full flex justify-between fixed z-20 transition text-foreground bg-white shadow-lg dark:bg-black',
+      ' px-4 md:px-32  w-full flex justify-between fixed z-20 transition text-foreground bg-white shadow-lg dark:bg-black',
       // theme === 'dark' && 'bg-black text-white shadow-lg',
     )}>
       <Logo />
       <Menu />
       <div className='flex gap-5 justify-center items-center'>
-        <div className='hidden sm:flex gap-5 justify-center items-center'>
+        <div className='hidden lg:flex gap-5 justify-center items-center'>
           <SwitchLanguage />
           <ThemeToggle/>
         </div>
