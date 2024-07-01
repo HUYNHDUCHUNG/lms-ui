@@ -43,6 +43,19 @@ const Instructors = () => {
     responsive
     
   };
+  const avatarInstructor = [
+      "/data/instructor/instructor-1.jpg",
+      "/data/instructor/instructor-2.jpg",
+      "/data/instructor/instructor-3.jpg",
+      "/data/instructor/instructor-4.jpg",
+  ]
+  const nameInstructor =[
+    "Lealia",
+    "Farah",
+    "Rachel",
+    "Christina",
+    
+  ]
   return (
     <div className='px-4 lg:px-32 pt-4 lg:pt-8 mt-8 lg:mt-16'>
       <div className='flex justify-center'>
@@ -50,10 +63,10 @@ const Instructors = () => {
       </div>
       <div className="pt-4 mt-2">
         <Slider {...settings}>
-        <InstructorItem />
-        <InstructorItem />
-        <InstructorItem />
-        <InstructorItem />
+        <InstructorItem src={avatarInstructor[0]} name={nameInstructor[0]} misson="Marketing Intructor"/>
+        <InstructorItem src={avatarInstructor[1]} name={nameInstructor[1]} misson="Marketing Intructor"/>
+        <InstructorItem src={avatarInstructor[2]} name={nameInstructor[2]} misson="Marketing Intructor"/>
+        <InstructorItem src={avatarInstructor[3]} name={nameInstructor[3]} misson="Marketing Intructor"/>
 
         </Slider>
       </div>
