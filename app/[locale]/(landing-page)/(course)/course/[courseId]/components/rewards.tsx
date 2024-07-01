@@ -12,7 +12,7 @@ const Rewards = () => {
         </div>
       </div>
 
-      <Button className='bg-amber-400'>Open</Button>
+      <Button className='bg-amber-400 hover:bg-amber-300'>Open</Button>
     </div>
   )
 }

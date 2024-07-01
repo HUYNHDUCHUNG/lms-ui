@@ -53,11 +53,11 @@ const LessionItem = ({
                 "h-0 overflow-hidden animate-in transition-all duration-300 px-4",
                 current === lesson.id && "h-auto py-4 border-b border-slate-500",
             )}>
-                <iframe width="700" height="400"  src="https://www.youtube.com/embed/vqo97B350_A" title="Becoming an AI Developer (The Truth)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  ></iframe>
+                <iframe className="w-[100%] rounded-md aspect-video"  src="https://www.youtube.com/embed/vqo97B350_A" title="Becoming an AI Developer (The Truth)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  ></iframe>
                 
                 <div className="mt-2 flex flex-col">
                     <span className="font-semibold">Document</span>
-                    <Button className="bg-[#06D001] w-[150px]">Enter Document</Button>
+                    <Button className="bg-[#06D001] w-[150px] hover:bg-[#3ddb3a]">Enter Document</Button>
                     <span>*Click opent to documents</span>
                 </div>
 

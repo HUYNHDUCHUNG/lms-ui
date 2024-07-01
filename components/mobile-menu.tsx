@@ -17,7 +17,7 @@ const MobileMenu = () => {
       <SheetTrigger asChild className='md:hidden'>
         <Button variant="ghost" size={'icon'}><Menu /></Button>
       </SheetTrigger>
-      <SheetContent side="left" className='flex flex-col justify-between'>
+      <SheetContent side="left" className='flex flex-col justify-between py-2'>
       <div className="flex flex-col gap-2 justify-start ">
             <Link href="/">{t("menu.home")}</Link>
             <Link href="/">{t("menu.about")}</Link>

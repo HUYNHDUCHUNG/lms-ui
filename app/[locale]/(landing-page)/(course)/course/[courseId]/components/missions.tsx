@@ -8,7 +8,7 @@ const Missions = () => {
           <Image height={50} width={50} alt='mission' src='/icon_missions.webp' />
           <div className='flex flex-col'>
             <span>Khảo sát ứng viên</span>
-            <span className='bg-slate-300 rounded-sm text-slate-700'>Survey</span>
+            <span className='bg-slate-300 rounded-sm w-fit p-1 text-slate-700'>Survey</span>
           </div>
         </div>
 

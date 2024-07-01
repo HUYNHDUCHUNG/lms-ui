@@ -34,13 +34,13 @@ const CourseId = ({
   return (
     <div>
         <Navbar/>
-        <div className='flex flex-col-reverse md:flex-row gap-4 px-8 md:px-32 py-16 pt-[100px]'>
+        <div className='flex flex-col-reverse md:flex-row gap-4 px-4 md:px-8 lg:px-32 py-16 pt-[100px]'>
             <div className="flex-1">
               <Description title={course?.title!} description={course?.description!}/>
               <LessonsList lessons={course?.lessons}/>
               <InstructorDetail instructors={course?.instructor}/>
             </div>
-            <div className="w-full md:w-[400px]">
+            <div className="w-full md:w-[40%]">
                 <CourseCard course={course}/>
             </div>
         </div>
